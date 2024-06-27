@@ -1,0 +1,39 @@
+.toolbar {
+    display: flex;
+    width: 600px;
+    padding: 0;
+    margin: 0;
+    gap: 15px;
+}
+
+.toolbar__item {
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    text-decoration: none;
+    list-style: none;
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+    border: 2px solid gainsboro;
+    background: #fff;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.btn:hover {
+    background-color: gainsboro;
+}
+
+
+.btn.active {
+    background-color: rgb(92, 82, 82);
+    border: 2px solid rgb(92, 82, 82);
+    color: #fff;
+}
