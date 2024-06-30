@@ -1,6 +1,7 @@
 import { ProjectList } from "./ProjectList";
 import Toolbar from "./Toolbar";
 import {useState} from 'react';
+import './filter.css'
 
 const Portfolio = () => {
     const data = {
@@ -64,19 +65,11 @@ const Portfolio = () => {
     let projectsList = [...portfolio.projects];
 
     function onSelectFilter(filter) {       
-        setPortfolio({...portfolio, selected: filter, projects: filterProjects(filter)});
+      setPortfolio({...portfolio, selected: filter, projects: filterProjects(filter)});
     }
 
     function filterProjects(filter) {
-        if (filter === 'All') {
-            return data.projects;
-        } else if (filter === 'Websites') {
-            return data.projects.filter(project => project.category === 'Websites');
-        } else if (filter === 'Flayers') {
-            return data.projects.filter(project => project.category === 'Flayers');
-        } else if (filter === 'Business Cards') {
-            return data.projects.filter(project => project.category === 'Business Cards');
-        }
+      return filter === 'All' ? data.projects : data.projects.filter(project => project.category === filter);
     }
 
   return (
@@ -85,7 +78,7 @@ const Portfolio = () => {
         filters={portfolio.filters}
         selected={portfolio.selected}
         onSelectFilter={onSelectFilter} />
-
+        
         <ProjectList projectsList={projectsList}/>
     </>
   )

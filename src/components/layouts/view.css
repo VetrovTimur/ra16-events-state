@@ -1,0 +1,100 @@
+.box-cardsView {
+    box-sizing: border-box;
+    padding: 15px;
+    width: 25%;
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    transition: 0.5s
+}
+.box-cardsView:hover {
+    box-shadow: 5px 5px 5px 0px rgba(118, 24, 24, 0.5);
+    transition: 0.5s
+}
+
+.container-cardsView {
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    justify-content: space-around;
+}
+
+.name-cardsView {
+    margin: 0;
+}
+
+.color-cardsView {
+    margin: 0;
+}
+
+.img-cardsView {
+    width: 300px;
+}
+
+.price-cardsView {
+    color: red;
+}
+
+.btn-cardsView {
+    width: 30%;
+    height: 25px;
+    border: 1px solid red;
+    color: red;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.btn-cardsView:hover {
+    background: red;
+    color: white;
+    transition: 0.5s;
+}
+
+.container-listView {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.box-listView {
+    padding: 0px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #F5F5F5;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    transition: 0.5s
+}
+
+.box-listView:hover {
+    box-shadow: 5px 5px 5px 0px rgba(118, 24, 24, 0.5);
+    transition: 0.5s
+}
+
+.img-listView {
+    height: 100px;
+}
+
+.price-listView {
+    color: red;
+}
+
+.btn-listView {
+    width: 10%;
+    height: 25px;
+    border: 1px solid red;
+    color: red;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.btn-listView:hover {
+    background: red;
+    color: white;
+    transition: 0.5s;
+}
